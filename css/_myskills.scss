@@ -1,0 +1,259 @@
+body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .skills-hero {
+    .skill-section {
+      margin: 100px 0;
+      padding: 50px;
+      
+      h2 {
+        font-family: 'Archivo Black', sans-serif;
+        font-size: 2rem;
+        color: #f39c12;
+      }
+  
+      p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        color: #fff;
+      }
+  
+      .img-fluid {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+  
+      &:nth-child(odd) {
+        background-color: #343a40;
+      }
+  
+      &:nth-child(even) {
+        background-color: #212529;
+      }
+    }
+  }
+
+  /* Sidebar styles */
+  #sidebar {
+    width: 250px;
+    left: -250px; /* Sidebar hidden initially */
+    transition: all 0.3s;
+    background-color: #212529;
+  }
+  
+  #sidebar.active {
+    left: 0; /* Sidebar visible when active */
+  }
+
+  /* Sidebar toggle button styling */
+  #sidebarToggle {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1050;
+  }
+
+  /* Body shift when sidebar is active */
+  body.sidebar-open {
+    padding-left: 250px;
+    transition: all 0.3s;
+  }
+
+  /* Styles for the nav tabs */
+  .nav-tabs {
+    border-bottom: 2px solid #FFD700 !important; /* Yellow border for tabs */
+    color: white;
+  }
+  
+  /* Inactive tab styles */
+  .nav-tabs .nav-link {
+    color: grey; /* Grey text for non-active tabs */
+    background-color: black; /* Black background for non-active tabs */
+    font-family: sans-serif;
+    padding: 10px 15px;
+  }
+  
+  /* Active tab styles */
+  .nav-tabs .nav-link.active {
+    color: black; /* Black text for active tab */
+    background-color: #FFD700 ; /* Yellow background for active tab */
+  }
+  
+  /* Optional: Change text color on hover for non-active tabs */
+  .nav-tabs .nav-link:hover {
+    color: black; /* Change text to black on hover */
+    background-color: #FFD700 ; /* Change background to yellow on hover */
+  }
+
+   
+
+    /* Active and hover states */
+    .nav-link {
+    transition: background-color 0.3s ease;
+    
+    }
+    .nav-link:hover {
+    background-color: #494949; /* Yellow on hover */
+    color:#ffc107;
+    }
+    .nav-link.active {
+    background-color: #ffca2f; /* Lighter yellow for active */
+    color: black;
+    }
+
+    /* Hide sidebar toggle button on medium and smaller screens */
+    @media (max-width: 1024px) {
+    #sidebarToggle {
+        display: none; /* Hide the toggle button on medium screens */
+    }
+    }
+
+    /* Navbar styles for medium and smaller screens */
+
+    /* Adjustments for Navbar */
+    .navbar {
+    position: relative;
+    z-index: 1050; /* Ensure navbar is above other content */
+    }
+
+    .navbar-brand {
+    margin-left: 10px; /* Spacing for brand name */
+    }
+
+    .navbar-toggler {
+    margin-right: 10px; /* Spacing for toggle button */
+    }
+
+    /* Hide the sidebar on smaller screens */
+    @media (max-width: 1024px) {
+    #sidebar {
+        display: none; /* Hide sidebar */
+    }
+    }
+
+   h2 {
+    font-family: 'Archivo Black', sans-serif;
+  }
+    h1 {
+      font-family: 'Roboto', sans-serif;
+    }
+
+ /* Sidebar Styling */
+ #sidebar {
+    width: 250px;
+    position: fixed;
+    left: -250px;
+    top: 0;
+    bottom: 0;
+    background-color: #343a40;
+    transition: transform 0.3s ease;
+    z-index: 1000;
+    transition: left 0.3s ease; /* Smooth transition */
+  }
+
+  /* Initially collapse the sidebar (off-screen) */
+  #sidebar.collapsed {
+    transform: translateX(-100%);
+  }
+
+  /* Main content adjustment */
+  #main-content {
+    margin-left: 0;
+    transition: margin-left 0.3s ease;
+    transition: padding-left 0.3s ease; /* Smooth content transition */
+
+  }
+
+  /* When the sidebar is open, push the main content */
+  #main-content.shifted {
+    margin-left: 250px; /* Match the sidebar width */
+
+    
+  }
+
+  /* Sidebar toggle button */
+  #sidebarToggle {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1100;
+  }
+
+  /* Adjust main content padding */
+  .main-container {
+    padding-top: 60px;
+  }
+
+  i {
+    color: #FFD700;
+    
+  }
+
+  ul {
+    list-style-type: none;
+    
+    
+  }
+
+  /* Custom styles for the form */
+  .modal-header {
+    background-color: #ffc107;
+    color: black;
+  }
+
+  .modal-content {
+    border: 3px solid #ffc107;
+  }
+
+  .form-control:focus, .form-select:focus {
+    border-color: #ffc107;
+    box-shadow: none;
+  }
+
+  .btn-primary {
+    background-color: #ffc107;
+    color: black;
+    border-color: #ffc107;
+  }
+
+  /* Style the form-check-input (radio button) */
+.form-check-input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  background-color: #fff;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+/* Unchecked state */
+.form-check-input:before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+/* Checked state - Change to your hex color #ffc107 */
+.form-check-input:checked {
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+
+.form-check-input:checked:before {
+  background-color: #fff;
+}
+

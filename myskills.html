@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Skills</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/_myskills.scss">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+
+  <!-- Sidebar for Large Screens -->
+  <div id="sidebar" class="bg-dark text-white d-lg-flex flex-column position-fixed vh-100 p-3 pt-5" style="width: 250px;">
+    <div class="navbar-brand mb-4 pt-3">
+        <a href="/index.html"><img src="images/A-Logos/png/logo-no-background.png" alt="Logo" width="200" class="d-inline-block align-top"></a>
+        <h3 class="mt-5">Crafting</h3>
+        <h5>Digital Excellence</h5> 
+    </div>
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link text-warning" href="/aboutus.html">About Me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-warning" href="/current-projects.html">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-warning" href="/images/Akeem_Brown_-_Software_Engineer (1).pdf">Resume</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-warning" href="#">Skills</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://calendly.com/akeemebrown/30min">Book Appointment</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-warning" data-bs-toggle="modal" data-bs-target="#contactModal" href="#">Contact Me</a>
+      </li>
+    </ul>
+
+    <!-- Contact Information -->
+    <div class="mt-auto text-white ps-3">
+      <h3>Akeem Brown</h3>
+      <p><strong>Email:</strong> <span>(akeembrown365@gmail.com)</span></p>
+      <p><strong>Phone #:</strong> <span>(512.963.7382)</span></p>
+    </div>
+    <div class="pb-3 mb-5 ps-3">
+        <h5>Social</h5>
+        <a href="http://instagram.com/akeemetan"
+          ><i class="fa-brands fa-instagram fa-xl"></i
+        ></a>
+        <a href="http://facebook.com/akeem-etan"
+          ><i class="fa-brands fa-facebook fa-xl"></i
+        ></a>
+        <a href="http://twitter.com/akeemetan"
+          ><i class="fa-brands fa-twitter fa-xl"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/akeem-brown-b2a941165"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://www.youtube.com/channel/UCw5gs0YAhOWK1AkQO0Fglpw"
+          ><i class="fa-brands fa-youtube fa-xl"></i
+        ></a>
+      </div>
+  </div>
+
+  <!-- Toggle Button for Sidebar (visible only on Large screens) -->
+  <button id="sidebarToggle" class="btn btn-warning position-fixed" style="top: 10px; left: 10px; z-index: 1050;">☰</button>
+
+  <!-- Navbar for Medium and Smaller Screens -->
+<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top d-lg-none pt-3 pb-3">
+    <div class="container-fluid d-flex justify-content-center align-items-center position-relative">
+        <!-- Centered logo -->
+        <a href="/index.html" class="mx-auto navbar-brand">
+            <img src="images/A-Logos/png/logo-no-background.png" alt="Logo" width="200" class="d-inline-block align-top">
+        </a>
+        <!-- Toggle button to the far right -->
+        <button class="navbar-toggler bg-warning position-absolute end-0 me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    <div class="collapse navbar-collapse text-center" id="navbarNavDropdown">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+                <a class="nav-link text-white" href="/aboutus.html">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/current-projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/images/Akeem_Brown_-_Software_Engineer (1).pdf">Resume</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://calendly.com/akeemebrown/30min">Book Appointment</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="modal" data-bs-target="#contactModal" href="#">Contact Me</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+  <!-- Main Content - Full-Width Cards -->
+  <main class="container-fluid  pt-3" id="main-content">
+
+    <!-- Page Title and Breadcrumbs -->
+  <section class="projects-header">
+    <div class="container">
+      <h1 class="mt-3">My Skills</h1>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">My Skills</li>
+        </ol>
+      </nav>
+      <div class="h4 bg-warning p-3 ">Our Skills & Services</div>
+    </div>
+  </section>
+
+    <!-- Front End Development -->
+    <section class="row align-items-center mb-5 py-5 bg-dark text-white">
+      <div class="col-lg-6 p-5">
+        <h2 class="text-warning">Front End Development</h2>
+        <p>We specialize in creating responsive, accessible, and visually stunning websites. Our team ensures seamless interaction with users, bringing your digital vision to life.</p>
+        <a href="https://calendly.com/akeemebrown/30min" class="btn btn-warning mt-3">Learn More</a>
+      </div>
+      <div class="col-lg-6">
+        <img src="images/ai-generated-8775232_1280.png" alt="Front End Development" class="img-fluid">
+      </div>
+    </section>
+
+    <!-- Back End Development -->
+    <section class="row align-items-center my-5 py-5">
+      <div class="col-lg-6 order-lg-2 p-5">
+        <h2 class="text-warning">Back End Development</h2>
+        <p>We provide robust backend services using modern technologies like Python, SQL, and Node.js to create scalable and efficient solutions.</p>
+        <a href="https://calendly.com/akeemebrown/30min" class="btn btn-warning mt-3">Learn More</a>
+      </div>
+      <div class="col-lg-6 order-lg-1">
+        <img src="images/ai-generated-8775234_1280.png" alt="Back End Development" class="img-fluid">
+      </div>
+    </section>
+
+    <!-- Full Stack Development -->
+    <section class="row align-items-center my-5 py-5 bg-warning">
+      <div class="col-lg-6 p-5">
+        <h2 class="text-white">Full Stack Development</h2>
+        <p>Our full stack solutions cover both frontend and backend development, allowing us to build comprehensive systems that perform well and look great.</p>
+        <a href="https://calendly.com/akeemebrown/30min" class="btn btn-dark mt-3">Learn More</a>
+      </div>
+      <div class="col-lg-6">
+        <img src="images/full-stack-dev.jpg" alt="Full Stack Development" class="img-fluid">
+      </div>
+    </section>
+
+    <!-- Section Experience Levels Carousel -->
+    <div class="container-fluid bg-black text-white mt-5 p-5" >
+        <div id="experienceCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active text-center">
+                    <h2 class="display-4">Front End Development</h2>
+                    <p>Experienced in building visually appealing and responsive user interfaces.</p>
+                </div>
+                <div class="carousel-item text-center">
+                    <h2 class="display-4">Back End Development</h2>
+                    <p>Skilled in building robust, scalable back-end solutions using modern technologies.</p>
+                </div>
+                <div class="carousel-item text-center">
+                    <h2 class="display-4">Graphic Design/UI</h2>
+                    <p>Designing beautiful user interfaces and experiences with a focus on usability.</p>
+                </div>
+                <div class="carousel-item text-center">
+                    <h2 class="display-4">Freelance Development</h2>
+                    <p>Working with clients to bring their visions to life through custom-built solutions.</p>        
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Graphic Design -->
+    <section class="row align-items-center my-5 py-5">
+      <div class="col-lg-6 order-lg-2 p-5">
+        <h2 class="text-warning">Graphic Design</h2>
+        <p>Our design team crafts visually compelling designs for logos, websites, and marketing materials that capture the essence of your brand.</p>
+        <a href="https://calendly.com/akeemebrown/30min" class="btn btn-warning mt-3">Learn More</a>
+      </div>
+      <div class="col-lg-6 order-lg-1">
+        <img src="images/graphic-design.jpg" alt="Graphic Design" class="img-fluid">
+      </div>
+    </section>
+
+    <!-- Video & Audio Editing -->
+    <section class="row align-items-center my-5 py-5 bg-dark">
+      <div class="col-lg-6 text-white p-5">
+        <h2 class="text-warning">Video & Audio Editing</h2>
+        <p>We deliver high-quality video and audio editing services to produce professional content that enhances your digital presence.</p>
+        <a href="https://calendly.com/akeemebrown/30min" class="btn btn-warning mt-3">Learn More</a>
+      </div>
+      <div class="col-lg-6">
+        <img src="images/video-audio-editing-2.jpg" alt="Video & Audio Editing" class="img-fluid">
+      </div>
+    </section>
+
+    <!-- UX/UI Design -->
+    <section class="row align-items-center my-5 py-5">
+      <div class="col-lg-6 order-lg-2 p-5">
+        <h2 class="text-warning">UX/UI Design</h2>
+        <p>We create intuitive and engaging interfaces, ensuring your product delivers a user-friendly experience that captivates users.</p>
+        <a href="https://calendly.com/akeemebrown/30min" class="btn btn-warning mt-3">Learn More</a>
+      </div>
+      <div class="col-lg-6 order-lg-1">
+        <img src="images/ux-ui-design.jpg" alt="UX/UI Design" class="img-fluid">
+      </div>
+    </section>
+
+    <!-- Project Management -->
+    <section class="row align-items-center my-5 py-5 bg-warning">
+      <div class="col-lg-6 p-5">
+        <h2 class="text-white">Project Management</h2>
+        <p>Our project management services ensure that your project stays on track, on time, and within budget, delivering results that exceed expectations.</p>
+        <a href="https://calendly.com/akeemebrown/30min" class="btn btn-dark mt-3">Learn More</a>
+      </div>
+      <div class="col-lg-6">
+        <img src="images/project management.jpg" alt="Project Management" class="img-fluid">
+      </div>
+    </section>
+
+    <!-- Section Experience Levels Carousel -->
+    <div class="container-fluid bg-black text-white p-5" >
+        <div id="experienceCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active text-center">
+                    <h2 class="display-4">Front End Development</h2>
+                    <p>Experienced in building visually appealing and responsive user interfaces.</p>
+                </div>
+                <div class="carousel-item text-center">
+                    <h2 class="display-4">Back End Development</h2>
+                    <p>Skilled in building robust, scalable back-end solutions using modern technologies.</p>
+                </div>
+                <div class="carousel-item text-center">
+                    <h2 class="display-4">Graphic Design/UI</h2>
+                    <p>Designing beautiful user interfaces and experiences with a focus on usability.</p>
+                </div>
+                <div class="carousel-item text-center">
+                    <h2 class="display-4">Freelance Development</h2>
+                    <p>Working with clients to bring their visions to life through custom-built solutions.</p>        
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile App Development -->
+    <section class="row align-items-center my-5 py-5">
+      <div class="col-lg-6 order-lg-2 p-5">
+        <h2 class="text-warning">Mobile App Development</h2>
+        <p>We build mobile apps that are intuitive, performant, and scalable across all platforms, ensuring an optimal user experience.</p>
+        <a href="https://calendly.com/akeemebrown/30min" class="btn btn-warning mt-3">Learn More</a>
+      </div>
+      <div class="col-lg-6 order-lg-1">
+        <img src="images/mobile-app-dev-1.jpg" alt="Mobile App Development" class="img-fluid">
+      </div>
+    </section>
+
+    <!-- Marketing & Social Media -->
+    <section class="row align-items-center my-5 py-5 bg-dark">
+      <div class="col-lg-6 p-5 text-white">
+        <h2 class="text-warning">Marketing & Social Media</h2>
+        <p>We craft effective marketing strategies that leverage social media platforms to help you connect with your target audience and grow your business.</p>
+        <a href="https://calendly.com/akeemebrown/30min" class="btn btn-warning mt-3">Learn More</a>
+      </div>
+      <div class="col-lg-6">
+        <img src="images/social-media-marketing-2.jpg" alt="Marketing & Social Media" class="img-fluid">
+      </div>
+    </section>
+
+    <!-- Business & Personal Funding -->
+    <section class="row align-items-center my-5 py-5">
+      <div class="col-lg-6 order-lg-2 p-5">
+        <h2 class="text-warning">Business & Personal Funding</h2>
+        <p>We provide expert financial guidance to help secure funding for personal or business ventures, ensuring you have the resources needed for success.</p>
+        <a class="btn btn-warning mt-3" href="https://funding.newreignlending.com">Learn More</a>
+      </div>
+      <div class="col-lg-6 order-lg-1">
+        <img src="images/business-funding-2.jpg" alt="Business & Personal Funding" class="img-fluid">
+      </div>
+    </section>
+    
+    <!-- Booking Button-->
+    <div class="text-center">
+      <a href="https://calendly.com/akeemebrown/30min" class="btn btn-warning mt-3 btn-lg">Book A Appointment Now</a>
+    </div>
+
+    <!-- Section Experience Levels Carousel -->
+    <div class="container-fluid bg-black text-white mt-5 p-5" >
+        <div id="experienceCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active text-center">
+                    <h2 class="display-4">Front End Development</h2>
+                    <p>Experienced in building visually appealing and responsive user interfaces.</p>
+                </div>
+                <div class="carousel-item text-center">
+                    <h2 class="display-4">Back End Development</h2>
+                    <p>Skilled in building robust, scalable back-end solutions using modern technologies.</p>
+                </div>
+                <div class="carousel-item text-center">
+                    <h2 class="display-4">Graphic Design/UI</h2>
+                    <p>Designing beautiful user interfaces and experiences with a focus on usability.</p>
+                </div>
+                <div class="carousel-item text-center">
+                    <h2 class="display-4">Freelance Development</h2>
+                    <p>Working with clients to bring their visions to life through custom-built solutions.</p>        
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white pt-5 pb-3">
+      <div class="container">
+          <div class="row">
+            <div class="col-4 col-sm-2 offset-1">
+              <h5>Links</h5>
+              <ul class="list-unstyle">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/aboutus.html">About</a></li>
+                <li><a href="/images/Akeem_Brown_-_Software_Engineer (1).pdf">Resume</a></li>
+                <li><a class="text-warning" data-bs-toggle="modal" data-bs-target="#contactModal" href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-sm-5 text-center">
+              <h5>Social</h5>
+              <a href="http://instagram.com/akeemetan"
+                ><i class="fa-brands fa-instagram fa-xl"></i
+              ></a>
+              <a href="http://facebook.com/akeem-etan"
+                ><i class="fa-brands fa-facebook fa-xl"></i
+              ></a>
+              <a href="http://twitter.com/akeemetan"
+                ><i class="fa-brands fa-twitter fa-xl"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/akeem-brown-b2a941165"
+              ><i class="fa-brands fa-linkedin fa-xl"></i
+              ></a>
+              <a href="https://www.youtube.com/channel/UCw5gs0YAhOWK1AkQO0Fglpw"
+                ><i class="fa-brands fa-youtube fa-xl"></i
+              ></a>
+            </div>
+            <div class="col-sm-4 text-center mt-4">
+              <h3>Contact Me Today</h3>
+              <i class="fa-solid fa-phone fa-lg text-warning"></i>
+              <a href="tel:+15129637382" class="text-white text-decoration-none">1-512-963-7382</a><br />
+              
+              <i class="fa-solid fa-envelope fa-lg text-warning"></i>
+              <a href="mailto:akeembrown365@gmail.com" class="text-white text-decoration-none">akeembrown365@gmail.com</a>
+          </div>
+          </div>
+        </div>
+      <p class="text-center text-white mt-5">&copy; 2024 Akeem Brown Portfolio. All rights reserved.</p>
+  </footer>
+
+    <!-- Modal -->
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Contact Form -->
+          <form class="text-black">
+            <!-- Name, Phone, and Email -->
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="firstName" class="form-label">First Name *</label>
+                <input type="text" class="form-control" id="firstName" placeholder="Enter your first name" required>
+              </div>
+              <div class="col-md-6">
+                <label for="lastName" class="form-label">Last Name *</label>
+                <input type="text" class="form-control" id="lastName" placeholder="Enter your last name" required>
+              </div>
+            </div>
+            <div class="row g-3 mt-2">
+              <div class="col-md-6">
+                <label for="phone" class="form-label">Phone Number *</label>
+                <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label">Email *</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email address" required>
+              </div>
+            </div>
+
+            <!-- Radio Input for Project Type -->
+            <div class="form-group mt-3 text-black">
+              <label>Project Type *</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="projectType" id="business" value="Business" required>
+                <label class="form-check-label" for="business">
+                  Business
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="projectType" id="personal" value="Personal">
+                <label class="form-check-label" for="personal">
+                  Personal
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="projectType" id="permanentHiring" value="Permanent Hiring">
+                <label class="form-check-label" for="permanentHiring">
+                  Permanent Hiring
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="projectType" id="freelance" value="Freelance">
+                <label class="form-check-label" for="freelance">
+                  Freelance
+                </label>
+              </div>
+            </div>
+
+            <!-- Radio Input for Urgency -->
+            <div class="form-group mt-3">
+              <label>Is this urgent?</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="urgent" id="urgentYes" value="Yes" required>
+                <label class="form-check-label" for="urgentYes">Yes</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="urgent" id="urgentNo" value="No">
+                <label class="form-check-label" for="urgentNo">No</label>
+              </div>
+            </div>
+
+            <!-- Slider for Budget -->
+            <div class="form-group mt-3">
+              <label for="budgetSlider">What is your budget? ($500 - $100,000)</label>
+              <input type="range" class="slider-range" id="budgetSlider" name="budget" min="500" max="100000" step="500" value="5000">
+              <p>Selected Budget: <span id="budgetValue">$5000</span></p>
+            </div>
+
+            <!-- Dropdown for Needs (Multiple Select) -->
+            <div class="form-group mt-3">
+              <label for="needsSelect">What Are Your Needs? *</label>
+              <select class="form-select" id="needsSelect" multiple size="5" required>
+                <option>Full Time Hiring Opportunity</option>
+                <option>Part Time Hiring</option>
+                <option>Front End Development</option>
+                <option>Back End Development</option>
+                <option>Full Stack Development</option>
+                <option>Graphic Design</option>
+                <option>Logo Design</option>
+                <option>Re-Creation of Current Graphics</option>
+                <option>App Marketing</option>
+                <option>Business Marketing</option>
+                <option>Project Management</option>
+                <option>App Publishing</option>
+                <option>Social Media Management</option>
+                <option>Business Funding</option>
+                <option>Project Funding</option>
+                <option>WordPress (Simple & Complex)</option>
+                <option>UX/UI Design</option>
+                <option>Film Editing</option>
+                <option>Multimedia Production</option>
+                <option>Custom Song Creation</option>
+                <option>Audio Creation</option>
+              </select>
+              <!-- Area to display selected items -->
+              <div class="mt-2" id="selectedNeeds"></div>
+            </div>
+
+            <!-- Project Description -->
+            <div class="form-group mt-3">
+              <label for="projectDescription">Project Description (Max 1000 Words)</label>
+              <textarea class="form-control" id="projectDescription" rows="4" placeholder="Enter detailed project description..." maxlength="1000" required></textarea>
+            </div>
+
+            <!-- File Upload -->
+            <div class="form-group mt-3 bg-warning">
+              <label for="fileUpload">Upload Files (png, audio, jpeg, pdf, mp4) *</label>
+              <input type="file" class="form-control" id="fileUpload" accept=".png,.jpeg,.jpg,.pdf,.mp4,.mp3,.wav" required>
+            </div>
+
+            <!-- Project Needs -->
+            <div class="form-group mt-3">
+              <label for="projectNeeds">Project Needs (Max 100 Words) *</label>
+              <textarea class="form-control" id="projectNeeds" rows="2" placeholder="Briefly describe your project needs..." maxlength="100" required></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="mt-3 text-end">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </main>
+
+  <!-- Bootstrap JS -->
+  
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS -->
+
+  
+  <script>
+    // Toggle sidebar visibility with smooth transition
+    document.getElementById("sidebarToggle").addEventListener("click", function () {
+        let sidebar = document.getElementById("sidebar");
+        let content = document.getElementById("main-content");
+  
+        if (sidebar.style.left === "-250px") {
+            sidebar.style.left = "0";  // Slide in the sidebar
+            content.style.paddingLeft = "250px"; // Push content
+        } else {
+            sidebar.style.left = "-250px";  // Slide out the sidebar
+            content.style.paddingLeft = "0";  // Reset content padding
+        }
+    });
+  
+    // Collapse sidebar on page load
+    window.onload = function() {
+        document.getElementById("sidebar").style.left = "-250px";
+    };
+  </script>
+
+  <script>
+      // JavaScript to show selected needs from dropdown
+      const needsSelect = document.getElementById('needsSelect');
+      const selectedNeeds = document.getElementById('selectedNeeds');
+      const budgetSlider = document.getElementById('budgetSlider');
+      const budgetValue = document.getElementById('budgetValue');
+
+      needsSelect.addEventListener('change', function () {
+      const selectedOptions = Array.from(needsSelect.selectedOptions).map(option => option.text);
+      selectedNeeds.innerHTML = `<strong>Selected Needs:</strong> ${selectedOptions.join(', ')}`;
+      });
+
+      budgetSlider.addEventListener('input', function () {
+      budgetValue.textContent = `$${budgetSlider.value}`;
+      });
+  </script>
+  <!-- Custom JS for Sidebar Toggle -->
+  <script>
+    document.getElementById('sidebarToggle').addEventListener('click', function() {
+      var sidebar = document.getElementById('sidebar');
+      sidebar.classList.toggle('d-none');
+    });
+  </script>
+</body>
+</html>

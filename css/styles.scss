@@ -1,0 +1,283 @@
+/* General styling */
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Text Font */
+  .archivo-black-regular {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  /* Fixed Sidebar styling */
+  #sidebar {
+    transition: left 0.3s ease;
+    width: 16%;
+    z-index: 9999;
+    padding-bottom: 10px;
+  }
+  
+  #sidebarToggle {
+    z-index: 10000;
+  }
+
+  /* Add this CSS to your styles */
+body.sidebar-open {
+  padding-left: 0px; /* Adjust according to your sidebar width */
+}
+
+/* Optional: If your sidebar is collapsible */
+body {
+  transition: padding-left 0.3s; /* Smooth transition when opening/closing the sidebar */
+}
+
+  
+  /* Adjust padding for the content */
+  #content {
+    transition: padding-left 0.3s ease;
+  }
+  
+  /* Navbar links */
+  .nav-link {
+    color: white;
+    padding: 10px 0;
+  }
+  
+  .nav-link:hover {
+    color: yellow;
+  }
+  
+  h1, h2 {
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: bold;
+    color: whitesmoke;
+  }
+  
+  p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+  }
+  
+  h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+  }
+  
+  h1 {
+    font-weight: 900;
+    font-family: 'Archivo Black';
+  }
+  
+  .lead {
+    font-size: 1.5rem;
+  }
+  
+  .hero-section h1 {
+    font-size: 4rem;
+    color: black;
+    padding-top: 10px;
+  }
+  
+  .hero-section-full {
+    background-color: #FFD700;
+    background-image: linear-gradient(#acacac, #00d0ff );
+  }
+
+  .custom-h1 {
+    padding-right: 50px; /* Adjust the value as needed */
+}
+
+
+  
+  /* Skill Cards */
+  .card {
+    border: none;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #252525;
+    padding: 20px 0;
+
+  }
+  
+  /* Custom Button Styles */
+  .btn, 
+  .btn-primary, 
+  .btn-secondary, 
+  .btn-success, 
+  .btn-danger, 
+  .btn-warning, 
+  .btn-info, 
+  .btn-light, 
+  .btn-dark, 
+  .btn-link {
+      background-color: #ffc21a !important; /* Yellow background */
+      color: black !important; /* Black text */
+      border: none; /* Remove default border */
+  }
+  
+  .btn:hover,
+  .btn:focus, 
+  .btn:active {
+      background-color: #FFD700 !important; /* Slightly darker yellow on hover */
+      color: black !important; /* Keep text black on hover */
+  }
+  
+  /* Specific case for outline buttons */
+  .btn-outline-primary,
+  .btn-outline-secondary,
+  .btn-outline-success,
+  .btn-outline-danger,
+  .btn-outline-warning,
+  .btn-outline-info,
+  .btn-outline-light,
+  .btn-outline-dark {
+      background-color: yellow !important; /* Yellow background */
+      color: black !important; /* Black text */
+      border-color: yellow !important; /* Ensure border matches background */
+  }
+  
+  /* Custom Button Styles for Skills Section */
+  .card .btn {
+    background-color: yellow; /* Yellow background */
+    color: black; /* Black text */
+    border: none; /* Remove default border */
+  }
+  
+  .card .btn:hover,
+  .card .btn:focus,
+  .card .btn:active {
+    background-color: #FFD700 !important; /* Darker yellow on hover */
+    color: black !important; /* Keep text black on hover */
+  }
+  
+  /* General styles for the experience section */
+  #experience {
+    background-color: black; /* Black background */
+    color: white; /* White text */
+    padding: 20px; /* Padding for the section */
+  }
+  
+  /* Styles for the nav tabs */
+  .nav-tabs {
+    border-bottom: 2px solid #FFD700 !important; /* Yellow border for tabs */
+    color: white;
+  }
+  
+  /* Inactive tab styles */
+  .nav-tabs .nav-link {
+    color: grey; /* Grey text for non-active tabs */
+    background-color: black; /* Black background for non-active tabs */
+    font-family: sans-serif;
+    padding: 10px 15px;
+  }
+  
+  /* Active tab styles */
+  .nav-tabs .nav-link.active {
+    color: black; /* Black text for active tab */
+    background-color: #FFD700 ; /* Yellow background for active tab */
+  }
+  
+  /* Optional: Change text color on hover for non-active tabs */
+  .nav-tabs .nav-link:hover {
+    color: black; /* Change text to black on hover */
+    background-color: #FFD700 ; /* Change background to yellow on hover */
+  }
+  
+  .contact-button {
+    padding-bottom: 30px;
+  }
+  
+  i {
+    font-size: 40px;
+    color: #FFD700;
+  }
+
+  a {
+    color: #ffc107; /* Change link color to yellow */
+    text-decoration: none; /* Optional: Remove underline */
+    }
+
+    a:hover {
+        color: rgb(0, 169, 236); /* Change hover color to a lighter grey */
+        background-color: #252525;
+    }
+
+    ul {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0; /* Optional: Removes default padding */
+    margin: 0; /* Optional: Removes default margin */
+    
+    }
+
+    .carousel-indicators li {
+    text-indent: -9999px; /* Hide any possible text */
+    display: none; /* Hide any content that might be showing after the indicators */
+    }
+
+  /* Add a white border to the active tab when shown */
+.accordion-button:not(.collapsed) {
+  border: 2px solid white; /* White border when the tab is active */
+}
+
+/* Add padding around the button to make the border more visible */
+.accordion-button {
+  padding: 1rem; /* Adjust padding as needed */
+}
+
+/* Style the form-check-input (radio button) */
+.form-check-input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  background-color: #fff;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+/* Unchecked state */
+.form-check-input:before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+/* Checked state - Change to your hex color #ffc107 */
+.form-check-input:checked {
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+
+.form-check-input:checked:before {
+  background-color: #fff;
+}
+
+
+
+  @import '/css/myskills';
+  @import '/css/project-styles';
+  @import '/css/aboutus.scss';
+ 
+
+  

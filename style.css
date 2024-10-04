@@ -1,0 +1,187 @@
+/* General styling */
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Text Font */
+.archivo-black-regular {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Fixed Sidebar styling */
+#sidebar {
+  transition: left 0.3s ease;
+  width: 16%;
+  z-index: 9999;
+  padding-bottom: 10px;
+}
+
+#sidebarToggle {
+  z-index: 10000;
+}
+
+/* Adjust padding for the content */
+#content {
+  transition: padding-left 0.3s ease;
+}
+
+/* Navbar links */
+.nav-link {
+  color: white;
+  padding: 10px 0;
+}
+
+.nav-link:hover {
+  color: yellow;
+}
+
+h1, h2 {
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+p {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+.lead {
+  font-size: 1.5rem;
+}
+
+.hero-section h1 {
+  font-size: 4rem;
+  color: black;
+  padding-top: 10px;
+}
+
+.hero-section-full {
+  background-color: #FFD700;
+  background-image: linear-gradient(#acacac, #00d0ff );
+}
+
+/* Skill Cards */
+.card {
+  border: none;
+}
+
+.card-title {
+  font-size: 1.5rem;
+}
+
+
+
+/* Custom Button Styles */
+.btn, 
+.btn-primary, 
+.btn-secondary, 
+.btn-success, 
+.btn-danger, 
+.btn-warning, 
+.btn-info, 
+.btn-light, 
+.btn-dark, 
+.btn-link {
+    background-color: #ffc21a !important; /* Yellow background */
+    color: black !important; /* Black text */
+    border: none; /* Remove default border */
+}
+
+.btn:hover,
+.btn:focus, 
+.btn:active {
+    background-color: #FFD700 !important; /* Slightly darker yellow on hover */
+    color: black !important; /* Keep text black on hover */
+}
+
+/* Specific case for outline buttons */
+.btn-outline-primary,
+.btn-outline-secondary,
+.btn-outline-success,
+.btn-outline-danger,
+.btn-outline-warning,
+.btn-outline-info,
+.btn-outline-light,
+.btn-outline-dark {
+    background-color: yellow !important; /* Yellow background */
+    color: black !important; /* Black text */
+    border-color: yellow !important; /* Ensure border matches background */
+}
+
+/* Custom Button Styles for Skills Section */
+.card .btn {
+  background-color: yellow; /* Yellow background */
+  color: black; /* Black text */
+  border: none; /* Remove default border */
+}
+
+.card .btn:hover,
+.card .btn:focus,
+.card .btn:active {
+  background-color: #FFD700 !important; /* Darker yellow on hover */
+  color: black !important; /* Keep text black on hover */
+}
+
+/* General styles for the experience section */
+#experience {
+  background-color: black; /* Black background */
+  color: white; /* White text */
+  padding: 20px; /* Padding for the section */
+}
+
+/* Styles for the nav tabs */
+.nav-tabs {
+  border-bottom: 2px solid #FFD700 !important; /* Yellow border for tabs */
+  color: white;
+}
+
+/* Inactive tab styles */
+.nav-tabs .nav-link {
+  color: grey; /* Grey text for non-active tabs */
+  background-color: black; /* Black background for non-active tabs */
+  font-family: sans-serif;
+  padding: 10px 15px;
+}
+
+/* Active tab styles */
+.nav-tabs .nav-link.active {
+  color: black; /* Black text for active tab */
+  background-color: #FFD700 ; /* Yellow background for active tab */
+}
+
+/* Optional: Change text color on hover for non-active tabs */
+.nav-tabs .nav-link:hover {
+  color: black; /* Change text to black on hover */
+  background-color: #FFD700 ; /* Change background to yellow on hover */
+}
+
+.contact-button {
+  padding-bottom: 30px;
+}
+
+i {
+  font-size: 40px;
+  color: #FFD700;
+}
+
+
+
+
+
+
+
